@@ -1,4 +1,10 @@
 DemoApp::Application.routes.draw do
+  resources :microposts
+
+  resources :users
+  get "user/new"
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -19,7 +25,7 @@ DemoApp::Application.routes.draw do
   #       get 'short'
   #       post 'toggle'
   #     end
-  #
+  
   #     collection do
   #       get 'sold'
   #     end
